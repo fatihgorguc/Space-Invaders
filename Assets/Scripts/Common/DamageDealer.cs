@@ -12,7 +12,7 @@ namespace Common
         [SerializeField] private MMFeedbacks destroyFb;
         private void OnTriggerEnter2D(Collider2D col)
         {
-            col.GetComponent<Health>().ChangeHealth(-damageAmount);
+            if (col.TryGetComponent<Health>(out var health)) health.ChangeHealth(-damageAmount);
             hitFb.PlayFeedbacks();
             if (!pierce) destroyFb.PlayFeedbacks();
         }

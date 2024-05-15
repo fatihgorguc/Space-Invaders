@@ -37,8 +37,9 @@ namespace Background
         {
             for (byte i = 0; i < _layers.Count; i++)
             {
-                _layers[i].transform.position = new Vector3
-                    (_layers[i].transform.position.x, _layers[i].transform.position.y + yMoveSpeed/10 * ((1 - parallaxMultiplierOffset) * i/_layers.Count-1) * -1);
+                _layers[i].transform.position = Vector2.up * (_layers[i].transform.position.y +
+                                                               yMoveSpeed / 10 * ((1 - parallaxMultiplierOffset) * i /
+                                                                   _layers.Count - 1) * -1);
             }
         }
 

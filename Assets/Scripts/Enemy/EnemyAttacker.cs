@@ -34,5 +34,10 @@ namespace Enemy
                 yield return new WaitForSeconds(Random.Range(attackDelayMin, attackDelayMax));
             }
         }
+        
+        public void StopAttacking()
+        {
+            StopAllCoroutines();
+        }
     }
 }

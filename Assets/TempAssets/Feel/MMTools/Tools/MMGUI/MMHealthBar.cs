@@ -372,6 +372,7 @@ namespace MoreMountains.Tools
 		protected virtual IEnumerator FinalHideBar()
 		{
 			_finalHideStarted = true;
+			Destroy(_progressBar.gameObject, HideBarAtZeroDelay);
 			if (InstantiatedOnDeath != null)
 			{
 				GameObject instantiatedOnDeath = Instantiate(InstantiatedOnDeath, this.transform.position + HealthBarOffset, this.transform.rotation);

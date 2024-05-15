@@ -4867,7 +4867,6 @@ GameObject:
   - component: {fileID: 13443737352388849}
   - component: {fileID: 13443737352388850}
   - component: {fileID: 13443737352388848}
-  - component: {fileID: 13443737352388749}
   - component: {fileID: 13443737352388750}
   m_Layer: 5
   m_Name: MainMenuButton
@@ -4953,111 +4952,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &13443737352388749
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 13443737352388854}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00fce7cea59bce742af6c0ddc82bad60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Active: 1
-  Label: Load Scene
-  Chance: 100
-  Timing:
-    TimescaleMode: 0
-    ExcludeFromHoldingPauses: 0
-    ContributeToTotalDuration: 1
-    InitialDelay: 1.2
-    CooldownDuration: 0
-    InterruptsOnStop: 1
-    NumberOfRepeats: 0
-    RepeatForever: 0
-    DelayBetweenRepeats: 1
-    MMFeedbacksDirectionCondition: 0
-    PlayDirection: 0
-    ConstantIntensity: 0
-    UseIntensityInterval: 0
-    IntensityIntervalMin: 0
-    IntensityIntervalMax: 0
-    Sequence: {fileID: 0}
-    TrackID: 0
-    Quantized: 0
-    TargetBPM: 120
-  DebugActive: 0
-  LoadingSceneName: MainMenu
-  DestinationSceneName: MainMenu
-  LoadingMode: 1
-  Priority: 4
-  InterpolateProgress: 1
-  SecureLoad: 1
-  BeforeEntryFadeDelay: 0
-  EntryFadeDuration: 1
-  AfterEntryFadeDelay: 1
-  BeforeExitFadeDelay: 1
-  ExitFadeDuration: 1
-  ProgressInterpolationSpeed: 5
-  FadeMode: 0
-  EntryFadeTween:
-    MMTweenDefinitionType: 1
-    MMTweenCurve: 4
-    Curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    Initialized: 0
-  ExitFadeTween:
-    MMTweenDefinitionType: 1
-    MMTweenCurve: 4
-    Curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    Initialized: 0
 --- !u!114 &13443737352388750
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9975,6 +9869,7 @@ GameObject:
   - component: {fileID: 40776648258387391}
   - component: {fileID: 3341871540590180544}
   - component: {fileID: 8794162655155069093}
+  - component: {fileID: 886932112}
   m_Layer: 5
   m_Name: SelectedFB
   m_TagString: Untagged
@@ -10020,7 +9915,7 @@ MonoBehaviour:
   - {fileID: 8794162655155069093}
   - {fileID: 13443737866232860}
   - {fileID: 3080029850766901967}
-  - {fileID: 13443737352388749}
+  - {fileID: 886932112}
   - {fileID: 5821650803967561863}
   InitializationMode: 2
   SafeMode: 3
@@ -10625,7 +10520,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 2bf30c2d814cabe4cac46c9bf3250cba, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -10755,6 +10650,111 @@ MonoBehaviour:
     AmplitudeX: 0.2
     AmplitudeY: 0.2
     AmplitudeZ: 0
+--- !u!114 &886932112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 13443737866232833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00fce7cea59bce742af6c0ddc82bad60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Active: 1
+  Label: Load Scene
+  Chance: 100
+  Timing:
+    TimescaleMode: 0
+    ExcludeFromHoldingPauses: 0
+    ContributeToTotalDuration: 1
+    InitialDelay: 1.2
+    CooldownDuration: 0
+    InterruptsOnStop: 1
+    NumberOfRepeats: 0
+    RepeatForever: 0
+    DelayBetweenRepeats: 1
+    MMFeedbacksDirectionCondition: 0
+    PlayDirection: 0
+    ConstantIntensity: 0
+    UseIntensityInterval: 0
+    IntensityIntervalMin: 0
+    IntensityIntervalMax: 0
+    Sequence: {fileID: 0}
+    TrackID: 0
+    Quantized: 0
+    TargetBPM: 120
+  DebugActive: 0
+  LoadingSceneName: 
+  DestinationSceneName: MainMenu
+  LoadingMode: 0
+  Priority: 4
+  InterpolateProgress: 1
+  SecureLoad: 1
+  BeforeEntryFadeDelay: 0
+  EntryFadeDuration: 0.2
+  AfterEntryFadeDelay: 0
+  BeforeExitFadeDelay: 0
+  ExitFadeDuration: 0.2
+  ProgressInterpolationSpeed: 5
+  FadeMode: 0
+  EntryFadeTween:
+    MMTweenDefinitionType: 1
+    MMTweenCurve: 4
+    Curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    Initialized: 0
+  ExitFadeTween:
+    MMTweenDefinitionType: 1
+    MMTweenCurve: 4
+    Curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    Initialized: 0
 --- !u!1 &13443738089159338
 GameObject:
   m_ObjectHideFlags: 0
@@ -29876,12 +29876,13 @@ GameObject:
   - component: {fileID: 4177241449101578538}
   - component: {fileID: 5762311240490315279}
   - component: {fileID: 1043078105464275278}
-  - component: {fileID: 13443738913507277}
   - component: {fileID: 1034409765578459501}
   - component: {fileID: 7088928112356845809}
   - component: {fileID: 1597307808976708668}
   - component: {fileID: 1694079519442615797}
   - component: {fileID: 5336770325477710614}
+  - component: {fileID: 852147427}
+  - component: {fileID: 852147426}
   m_Layer: 5
   m_Name: SelectedFB
   m_TagString: Untagged
@@ -29927,7 +29928,7 @@ MonoBehaviour:
   - {fileID: 1043078105464275278}
   - {fileID: 5336770325477710614}
   - {fileID: 1034409765578459501}
-  - {fileID: 13443738913507277}
+  - {fileID: 852147426}
   - {fileID: 7088928112356845809}
   InitializationMode: 2
   SafeMode: 3
@@ -30210,66 +30211,6 @@ MonoBehaviour:
   AllowAdditivePlays: 0
   DetermineScaleOnPlay: 0
   DestinationScale: {x: 0.5, y: 0.5, z: 0.5}
---- !u!114 &13443738913507277
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6316918683305111157}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 23a102c1a91e34644aa37f1e4f00c31a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Active: 1
-  Label: Events
-  Chance: 100
-  Timing:
-    TimescaleMode: 0
-    ExcludeFromHoldingPauses: 0
-    ContributeToTotalDuration: 1
-    InitialDelay: 1.5
-    CooldownDuration: 0
-    InterruptsOnStop: 1
-    NumberOfRepeats: 0
-    RepeatForever: 0
-    DelayBetweenRepeats: 1
-    MMFeedbacksDirectionCondition: 0
-    PlayDirection: 0
-    ConstantIntensity: 0
-    UseIntensityInterval: 0
-    IntensityIntervalMin: 0
-    IntensityIntervalMax: 0
-    Sequence: {fileID: 0}
-    TrackID: 0
-    Quantized: 0
-    TargetBPM: 120
-  DebugActive: 0
-  PlayEvents:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: MoreMountains.Tools.MMSceneLoadingManager, MoreMountains.Tools
-        m_MethodName: QuitGame
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  StopEvents:
-    m_PersistentCalls:
-      m_Calls: []
-  InitializationEvents:
-    m_PersistentCalls:
-      m_Calls: []
-  ResetEvents:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!114 &1034409765578459501
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30307,7 +30248,7 @@ MonoBehaviour:
     TargetBPM: 120
   DebugActive: 0
   Channel: 0
-  ShakeDuration: 1
+  ShakeDuration: 3
   RelativeIntensity: 1
   ResetShakerValuesAfterShake: 1
   ResetTargetValuesAfterShake: 1
@@ -30416,15 +30357,15 @@ MonoBehaviour:
     - serializedVersion: 3
       time: 0
       value: 0
-      inSlope: 3.333375
-      outSlope: 3.333375
+      inSlope: 10.0000105
+      outSlope: 10.0000105
       tangentMode: 34
       weightedMode: 0
       inWeight: 0
       outWeight: 0.33333334
     - serializedVersion: 3
-      time: 0.3
-      value: 1.0000125
+      time: 0.1
+      value: 1.0000011
       inSlope: -0.0037939851
       outSlope: -0.0037939851
       tangentMode: 0
@@ -30434,8 +30375,8 @@ MonoBehaviour:
     - serializedVersion: 3
       time: 1
       value: 1.0000014
-      inSlope: -0.000015837806
-      outSlope: -0.000015837806
+      inSlope: 0.00000039736432
+      outSlope: 0.00000039736432
       tangentMode: 34
       weightedMode: 0
       inWeight: 0.33333334
@@ -30480,7 +30421,7 @@ MonoBehaviour:
     TargetBPM: 120
   DebugActive: 0
   Channel: 0
-  Duration: 1
+  Duration: 3
   ResetShakerValuesAfterShake: 1
   ResetTargetValuesAfterShake: 1
   RelativeLowPass: 0
@@ -30497,8 +30438,8 @@ MonoBehaviour:
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 0.29999998
-      value: 0
+      time: 0.1
+      value: -0.0000086398795
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -30506,23 +30447,14 @@ MonoBehaviour:
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 0.7
-      value: 0.0007313322
+      time: 1
+      value: -0.0000010896474
       inSlope: -0.015302025
       outSlope: -0.015302025
       tangentMode: 0
       weightedMode: 0
       inWeight: 0.33333334
       outWeight: 0.48989734
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
@@ -30713,3 +30645,76 @@ MonoBehaviour:
     AmplitudeX: 0.2
     AmplitudeY: 0.2
     AmplitudeZ: 0
+--- !u!114 &852147427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6316918683305111157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d8e35f0e39f9744095dbb47ae3363a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  QuitButton: 0
+--- !u!114 &852147426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6316918683305111157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23a102c1a91e34644aa37f1e4f00c31a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Active: 1
+  Label: Events
+  Chance: 100
+  Timing:
+    TimescaleMode: 0
+    ExcludeFromHoldingPauses: 0
+    ContributeToTotalDuration: 1
+    InitialDelay: 1.5
+    CooldownDuration: 0
+    InterruptsOnStop: 1
+    NumberOfRepeats: 0
+    RepeatForever: 0
+    DelayBetweenRepeats: 1
+    MMFeedbacksDirectionCondition: 0
+    PlayDirection: 0
+    ConstantIntensity: 0
+    UseIntensityInterval: 0
+    IntensityIntervalMin: 0
+    IntensityIntervalMax: 0
+    Sequence: {fileID: 0}
+    TrackID: 0
+    Quantized: 0
+    TargetBPM: 120
+  DebugActive: 0
+  PlayEvents:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 852147427}
+        m_TargetAssemblyTypeName: MoreMountains.Tools.MMApplicationQuit, MoreMountains.Tools
+        m_MethodName: Quit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  StopEvents:
+    m_PersistentCalls:
+      m_Calls: []
+  InitializationEvents:
+    m_PersistentCalls:
+      m_Calls: []
+  ResetEvents:
+    m_PersistentCalls:
+      m_Calls: []

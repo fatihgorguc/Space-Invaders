@@ -52,7 +52,7 @@ MonoBehaviour:
   - {fileID: 1108255291}
   - {fileID: 1108255292}
   - {fileID: 3980735456449052924}
-  InitializationMode: 2
+  InitializationMode: 1
   SafeMode: 3
   Direction: 0
   AutoChangeDirectionOnEnd: 0
@@ -1623,7 +1623,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1496093674}
   - component: {fileID: 1496093675}
-  - component: {fileID: 790246640}
   - component: {fileID: 790246641}
   - component: {fileID: 790246642}
   - component: {fileID: 457696808}
@@ -1636,6 +1635,8 @@ GameObject:
   - component: {fileID: 3455919857459542911}
   - component: {fileID: 7580420027335282963}
   - component: {fileID: 7090429134265118882}
+  - component: {fileID: 6824300831798486661}
+  - component: {fileID: 6824300831798486672}
   m_Layer: 8
   m_Name: DieFB
   m_TagString: Untagged
@@ -1676,12 +1677,13 @@ MonoBehaviour:
   - {fileID: 457696816}
   - {fileID: 457696818}
   - {fileID: 457696817}
+  - {fileID: 6824300831798486672}
   - {fileID: 790246642}
   - {fileID: 457696810}
   - {fileID: 457696809}
   - {fileID: 457696808}
   - {fileID: 790246641}
-  - {fileID: 790246640}
+  - {fileID: 6824300831798486661}
   - {fileID: 7090429134265118882}
   InitializationMode: 2
   SafeMode: 3
@@ -1757,111 +1759,6 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   DebugActive: 0
---- !u!114 &790246640
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1496093673}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00fce7cea59bce742af6c0ddc82bad60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Active: 1
-  Label: Load Scene
-  Chance: 100
-  Timing:
-    TimescaleMode: 0
-    ExcludeFromHoldingPauses: 0
-    ContributeToTotalDuration: 1
-    InitialDelay: 2
-    CooldownDuration: 0
-    InterruptsOnStop: 1
-    NumberOfRepeats: 0
-    RepeatForever: 0
-    DelayBetweenRepeats: 1
-    MMFeedbacksDirectionCondition: 0
-    PlayDirection: 0
-    ConstantIntensity: 0
-    UseIntensityInterval: 0
-    IntensityIntervalMin: 0
-    IntensityIntervalMax: 0
-    Sequence: {fileID: 0}
-    TrackID: 0
-    Quantized: 0
-    TargetBPM: 120
-  DebugActive: 0
-  LoadingSceneName: EndGameMenu
-  DestinationSceneName: EndGameMenu
-  LoadingMode: 1
-  Priority: 4
-  InterpolateProgress: 1
-  SecureLoad: 1
-  BeforeEntryFadeDelay: 0
-  EntryFadeDuration: 1
-  AfterEntryFadeDelay: 0
-  BeforeExitFadeDelay: 0
-  ExitFadeDuration: 0
-  ProgressInterpolationSpeed: 5
-  FadeMode: 0
-  EntryFadeTween:
-    MMTweenDefinitionType: 1
-    MMTweenCurve: 4
-    Curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    Initialized: 0
-  ExitFadeTween:
-    MMTweenDefinitionType: 1
-    MMTweenCurve: 4
-    Curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    Initialized: 0
 --- !u!114 &790246641
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2101,7 +1998,7 @@ MonoBehaviour:
     TimescaleMode: 0
     ExcludeFromHoldingPauses: 0
     ContributeToTotalDuration: 1
-    InitialDelay: 1
+    InitialDelay: 1.2
     CooldownDuration: 0
     InterruptsOnStop: 1
     NumberOfRepeats: 0
@@ -2139,7 +2036,7 @@ MonoBehaviour:
     TimescaleMode: 0
     ExcludeFromHoldingPauses: 0
     ContributeToTotalDuration: 1
-    InitialDelay: 1
+    InitialDelay: 1.2
     CooldownDuration: 0
     InterruptsOnStop: 1
     NumberOfRepeats: 0
@@ -2177,7 +2074,7 @@ MonoBehaviour:
     TimescaleMode: 0
     ExcludeFromHoldingPauses: 0
     ContributeToTotalDuration: 1
-    InitialDelay: 1
+    InitialDelay: 1.2
     CooldownDuration: 0
     InterruptsOnStop: 1
     NumberOfRepeats: 0
@@ -2795,6 +2692,171 @@ MonoBehaviour:
     m_RotationOrder: 4
   RemapLowPassZero: 0
   RemapLowPassOne: 10000
+--- !u!114 &6824300831798486661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1496093673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00fce7cea59bce742af6c0ddc82bad60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Active: 1
+  Label: Load Scene
+  Chance: 100
+  Timing:
+    TimescaleMode: 0
+    ExcludeFromHoldingPauses: 0
+    ContributeToTotalDuration: 1
+    InitialDelay: 2
+    CooldownDuration: 0
+    InterruptsOnStop: 1
+    NumberOfRepeats: 0
+    RepeatForever: 0
+    DelayBetweenRepeats: 1
+    MMFeedbacksDirectionCondition: 0
+    PlayDirection: 0
+    ConstantIntensity: 0
+    UseIntensityInterval: 0
+    IntensityIntervalMin: 0
+    IntensityIntervalMax: 0
+    Sequence: {fileID: 0}
+    TrackID: 0
+    Quantized: 0
+    TargetBPM: 120
+  DebugActive: 0
+  LoadingSceneName: 
+  DestinationSceneName: EndGameMenu
+  LoadingMode: 0
+  Priority: 4
+  InterpolateProgress: 1
+  SecureLoad: 1
+  BeforeEntryFadeDelay: 0
+  EntryFadeDuration: 0.2
+  AfterEntryFadeDelay: 0
+  BeforeExitFadeDelay: 0
+  ExitFadeDuration: 0.2
+  ProgressInterpolationSpeed: 5
+  FadeMode: 0
+  EntryFadeTween:
+    MMTweenDefinitionType: 1
+    MMTweenCurve: 4
+    Curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    Initialized: 0
+  ExitFadeTween:
+    MMTweenDefinitionType: 1
+    MMTweenCurve: 4
+    Curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    Initialized: 0
+--- !u!114 &6824300831798486672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1496093673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23a102c1a91e34644aa37f1e4f00c31a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Active: 1
+  Label: Events
+  Chance: 100
+  Timing:
+    TimescaleMode: 0
+    ExcludeFromHoldingPauses: 0
+    ContributeToTotalDuration: 1
+    InitialDelay: 0
+    CooldownDuration: 0
+    InterruptsOnStop: 1
+    NumberOfRepeats: 0
+    RepeatForever: 0
+    DelayBetweenRepeats: 1
+    MMFeedbacksDirectionCondition: 0
+    PlayDirection: 0
+    ConstantIntensity: 0
+    UseIntensityInterval: 0
+    IntensityIntervalMin: 0
+    IntensityIntervalMax: 0
+    Sequence: {fileID: 0}
+    TrackID: 0
+    Quantized: 0
+    TargetBPM: 120
+  DebugActive: 0
+  PlayEvents:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6824300833010447418}
+        m_TargetAssemblyTypeName: Player.PlayerAttacker, Assembly-CSharp
+        m_MethodName: StopAttacking
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  StopEvents:
+    m_PersistentCalls:
+      m_Calls: []
+  InitializationEvents:
+    m_PersistentCalls:
+      m_Calls: []
+  ResetEvents:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1722266142
 GameObject:
   m_ObjectHideFlags: 0

@@ -4901,10 +4901,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dropSpeed: 3
-  randomHealthMax: 10
+  randomHealthMax: 5
   randomMoveSpeedMax: 5
-  randomAttackSpeedMax: 8
-  randomAttackDamageMax: 8
+  randomAttackSpeedMax: 5
+  randomAttackDamageMax: 5
   randomBuffTime: 15
   randomPierce: 1
   tookFb: {fileID: 5941573319557123795}

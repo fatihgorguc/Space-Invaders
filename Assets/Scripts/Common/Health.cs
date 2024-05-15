@@ -1,3 +1,4 @@
+using Enemy;
 using Essentials;
 using MoreMountains.Feedbacks;
 using MoreMountains.Tools;
@@ -13,14 +14,8 @@ namespace Common
         [SerializeField] private MMHealthBar healthBar;
         [SerializeField] private MMFeedbacks getHitFb;
         [SerializeField] private MMFeedbacks dieFb;
-        private Rigidbody _rigidbody;
-        private bool _isDead = false;
-
-        private void Awake()
-        {
-            _rigidbody = GetComponent<Rigidbody>();
-        }
-
+        private bool _isDead;
+        
         private void Start()
         {
             _currentHealth = maxHealth;

@@ -4985,10 +4985,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dropSpeed: 5
-  randomHealthMax: 20
-  randomMoveSpeedMax: 10
-  randomAttackSpeedMax: 15
-  randomAttackDamageMax: 15
+  randomHealthMax: 10
+  randomMoveSpeedMax: 8
+  randomAttackSpeedMax: 10
+  randomAttackDamageMax: 10
   randomBuffTime: 10
   randomPierce: 1
   tookFb: {fileID: 250157045273418784}

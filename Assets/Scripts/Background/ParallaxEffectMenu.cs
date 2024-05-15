@@ -36,9 +36,10 @@ namespace Background
         {
             for (int i = 0; i < layers.Count; i++)
             {
-                layers[i].transform.position = new Vector3
-                    (_cursorPos.x * ((1 - parallaxMultiplierOffset) * i/layers.Count-1),
-                        _cursorPos.y * ((1 - parallaxMultiplierOffset) * i/layers.Count-1));
+                Vector2 pos = new Vector2
+                (Mathf.Clamp(_cursorPos.x, -10, 10) * ((1 - parallaxMultiplierOffset) * i/layers.Count-1),
+                    Mathf.Clamp(_cursorPos.y, -10, 10) * ((1 - parallaxMultiplierOffset) * i/layers.Count-1));
+                layers[i].transform.position = pos;
             }
         }
     }

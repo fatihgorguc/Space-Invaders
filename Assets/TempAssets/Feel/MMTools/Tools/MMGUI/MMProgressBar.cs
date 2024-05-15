@@ -931,6 +931,7 @@ namespace MoreMountains.Tools
 		{
 			yield return MMCoroutine.WaitFor(delay);
 			this.gameObject.SetActive(false);
+			
 		}
 
 		#endregion ShowHide

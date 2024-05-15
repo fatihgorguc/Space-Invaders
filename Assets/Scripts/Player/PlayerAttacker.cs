@@ -19,6 +19,8 @@ namespace Player
         private Animator _anim;
         private static readonly int İsAttacking = Animator.StringToHash("isAttacking");
 
+        private Coroutine _attackRoutine;
+
         private void Awake()
         {
             _anim = GetComponent<Animator>();
@@ -26,7 +28,7 @@ namespace Player
 
         private void Start()
         {
-            StartCoroutine(InstantiateBullet());
+            _attackRoutine = StartCoroutine(InstantiateBullet());
         }
 
         private IEnumerator InstantiateBullet()
@@ -86,6 +88,11 @@ namespace Player
         {
             yield return new WaitForSeconds(t);
             bulletPierce = false;
+        }
+        
+        public void StopAttacking()
+        {
+            StopCoroutine(_attackRoutine);
         }
     }
 }
